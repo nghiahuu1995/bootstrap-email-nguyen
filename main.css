@@ -9,7 +9,7 @@
 /* Global Styles */
 body {
     
-    
+    min-width: 400px;
     font-family: Arial, sans-serif;
     background-color: #1e1e1e;
     color: #333;
@@ -42,24 +42,32 @@ nav ul li a {
 }
 
 main {
-    
+    position: relative;
+    border: 2px solid white;
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 36px auto;
+    
     height: 100vh;
     display: flex;
-    flex-direction: column; /* Added to ensure proper alignment */
-    justify-content: center; /* Center content vertically */
+    flex-direction: column; 
+    justify-content: center; 
 }
-
 section {
     margin-bottom: 20px;
 }
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+/* Define a custom CSS class to modify the icon appearance */
+.fa-mountain-sun {
+    /* Your custom styles go here */
+    
+    
+    position: absolute;
+    top: 36px;
+    left: 45%;
+    color: red; /* Change the icon color to red */
+    font-size: 60px; /* Change the icon size to 24 pixels */
 }
+
+
 
 footer {
     background-color: #007BFF;
@@ -69,10 +77,11 @@ footer {
 }
 
 .container {
+    position: absolute;
     min-height: 200px;
     padding: 24px 36px;
     width: 100%;
-    border: 2px solid white;
+    top: 120px;
     align-self: center;
     color: white;
 }
@@ -96,9 +105,10 @@ button[type="submit"] {
     font-weight: 900;
     font-size: 18px;
     margin-top: 12px;
+    border: 2px solid white;
 }
-/* img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 24px;
-} */
+img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
