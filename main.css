@@ -55,16 +55,16 @@ main {
 section {
     margin-bottom: 20px;
 }
-/* Define a custom CSS class to modify the icon appearance */
+
 .fa-mountain-sun {
-    /* Your custom styles go here */
+
     
     
     position: absolute;
     top: 36px;
     left: 45%;
-    color: red; /* Change the icon color to red */
-    font-size: 60px; /* Change the icon size to 24 pixels */
+    color: red; 
+    font-size: 60px; 
 }
 
 
