@@ -1,13 +1,17 @@
 /* CSS Reset (optional) */
-html, body, h1, h2, p, ul, li {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
 }
 
 /* Global Styles */
 body {
+    
+    
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #1e1e1e;
     color: #333;
 }
 
@@ -17,7 +21,9 @@ header {
     padding: 20px;
     text-align: center;
 }
-
+h2 {
+    text-align: center;
+}
 nav ul {
     list-style-type: none;
     background-color: #333;
@@ -36,9 +42,14 @@ nav ul li a {
 }
 
 main {
+    
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Added to ensure proper alignment */
+    justify-content: center; /* Center content vertically */
 }
 
 section {
@@ -56,3 +67,38 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.container {
+    min-height: 200px;
+    padding: 24px 36px;
+    width: 100%;
+    border: 2px solid white;
+    align-self: center;
+    color: white;
+}
+
+form {
+    width: 100%;
+}
+
+/* Set the width and padding for input and button elements */
+input,
+button {
+    
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+     /* Include padding and border in element's total width */
+}
+button[type="submit"] {
+    border-radius: 12px;
+    background-color: #007BFF;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 12px;
+}
+/* img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 24px;
+} */
