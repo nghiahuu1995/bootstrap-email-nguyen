@@ -11,51 +11,62 @@
   
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <button type="button" class="btn btn-primary position-relative">
-                  Inbox
-                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    99+
-                    <span class="visually-hidden">unread messages</span>
-                  </span>
-                </button>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-primary" type="submit">Search</button>
-            </form>
-          </div>
+  <nav class="navbar bg-body fixed-top">
+    <div class="container-fluid ">
+      <div class="row nav-row">
+        <div class="col col-2 col-md-2 text-center"><a class="navbar-brand" href="#"><i class="fa-regular fa-compass fa-spin fa-2xl"></i></a></div>
+        <div class="col col-8 col-md-8">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-    </nav>
+        <div class="col col-2 col-md-2 text-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars fa-flip fa-lg"></i></span>
+          </button>
+        </div>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  
       <div class="container-fluid">
         <div class="row carousel-container gx-3">
-          <div class="col-2 col-md-2">
+          <div class="col-2 col-md-2 col-sm-2">
             <!-- <ul class="list-group">
                 <a href="">
                   <li class="list-group-item">An item</li>
@@ -98,7 +109,7 @@
             </div>
             
           </div>
-          <div class="col-2 col-md-2">
+          <div class="col-2 col-md-2 col-sm-2">
             <!-- <ul class="list-group">
                 <a href="">
                   <li class="list-group-item">An item</li>
@@ -119,10 +130,10 @@
           </div>
         </div> 
         <div class="row gx-5">
-          <div class="col-2"></div>
-          <div class="col_content col-8 col-md-8 col-sm-12">
+          <div class="col-2 col-md-2 col-sm-2"></div>
+          <div class="col_content col-8 col-md-8 col-sm-12 ">
             <div class="row row_content">
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2021/09/1140-joshua-tree-hero.imgcache.rev.web.2088.1200.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Joshua Tree Park</h5>
@@ -130,7 +141,7 @@
                   <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
                 </div>
               </div>
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://lh3.googleusercontent.com/p/AF1QipO0D55rBXb8BP0z6M2usrZR8lV2JanLkHrqQUMm=s1360-w1360-h1020" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Grand Canyon</h5>
@@ -138,7 +149,7 @@
                   <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
                 </div>
               </div>
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1563449509.jpg?auto=format&w=1440&h=810&fit=crop&q=75" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Santorini</h5>
@@ -146,7 +157,7 @@
                   <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
                 </div>
               </div>
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://lh3.googleusercontent.com/p/AF1QipNmDUNFqDhCnLH2b2LJ5L7szKCIS0xgrxVVWDkU=s1360-w1360-h1020" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Balboa Park</h5>
@@ -154,7 +165,7 @@
                   <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
                 </div>
               </div>                     
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://lh3.googleusercontent.com/p/AF1QipPODBeubQ2uFS3n4a8KceQ7XRdrRnY_xzTpa7u4=s1360-w1360-h1020" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Lake Tahoe</h5>
@@ -162,7 +173,7 @@
                   <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
                 </div>
               </div>
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://lh3.googleusercontent.com/p/AF1QipNiVUQD9sw5gsmCFPtZP-cXYBXFZaSDaK_fWNZ5=s1360-w1360-h1020" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Central Park</h5>
@@ -170,7 +181,7 @@
                   <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
                 </div>
               </div>
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://lp-cms-production.imgix.net/2019-06/28206231.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Big Sur</h5>
@@ -178,7 +189,7 @@
                   <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
                 </div>
               </div>
-              <div class="col-3 col-md-6 col-sm-12 card" style="width: 18rem;">
+              <div class="col-3 col-md-6 col-sm-12 card" >
                 <img src="https://lh3.googleusercontent.com/p/AF1QipNktHTYeBxduhkM20LEhIZn6N3Eqikso4I7iSj1=s1360-w1360-h1020" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Yellowstone National Park</h5>
@@ -190,7 +201,7 @@
             
             
           </div>
-          <div class="col-2">
+          <div class="col-2 col-md-2 col-sm-2">
             
           </div>
         </div>

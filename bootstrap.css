@@ -15,18 +15,22 @@ img {
 
 .carousel-container {
     justify-content: center;
-    margin: 36px 0;
+    margin-top: 72px;
+    margin-bottom:18px;
 }
 .carousel-img {
-    
+  height: 350px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   
-  margin: 0;
+  
 }
 .card {
     margin: auto 0;
+    width: 18rem;
+    padding-top: 12px;
+    margin-bottom: 12px;
 }
 .card > img {
     height: 160px;
@@ -71,8 +75,10 @@ nav {
 p {
     overflow: hidden; 
 }
-i {
-    
+.nav-row {
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
 }
 .row_content {
     padding-top: 16px;
@@ -92,23 +98,31 @@ i {
     justify-content: start;
 
 }
-.list-group-item {
-    
-}
-.card {
-    padding-top: 12px;
-    margin-bottom: 12px;
+.navbar-toggler-icon {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
 }
 .url_text {
     color: black;
 }
-/* @media (0px < width < 768px) {
-    .carousel-container {
-    
-        
+@media (576px < width < 1308px) {
+    .card {
+        width: 49%;
+        margin:  4px 2px;
     }
     .list-group {
         display: none;
     }
     
-} */
+}
+
+@media (max-width:576px) {
+    .card {
+        width: 100%;
+    }
+    #carouselSlider {
+        display: none;
+    }
+    
+}
