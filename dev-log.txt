@@ -1,0 +1,3 @@
+-Outlining project
+-Create a sketch page
+-Separate layout of navigation bar and content container
