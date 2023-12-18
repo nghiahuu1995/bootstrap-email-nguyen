@@ -1,7 +1,30 @@
 -Outlining project
 -Create a sketch page
 -Separate layout of navigation bar and content container
--
--Add email page
--Add modal to send email to the site
--Fix responsive
+-Create nav bar with Bootstrap
+-Add home icon, search section and button group 
+-Add carousel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
