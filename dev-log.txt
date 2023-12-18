@@ -4,6 +4,11 @@
 -Create nav bar with Bootstrap
 -Add home icon, search section and button group 
 -Add carousel
+-Add travel location with card item using Bootstrap
+-Fix responsive
+-Add email page
+-Add modal to both email and main pages
+
 
 
 
