@@ -11,37 +11,10 @@
     <link rel="stylesheet" href="bootstrap.css" />
     <script src="https://kit.fontawesome.com/f22945cfc4.js" crossorigin="anonymous"></script>
     <style>
-        /* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .email-section {
-            background-color: rgb(255, 255, 255);
-            position: absolute;
-            top: 80px;
-        }
-        .email-list-item {
-            padding: 4px;
-            height: 80px;
-            overflow: hidden;
-            line-height: 30px;
-            border: 0.5px solid black;
-        }
-        .email-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: black;
-        }
-        .email-list-group {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-        } */
-        
     </style>
 </head>
 
-<body>
+<body class="email-body">
     <nav class="navbar bg-top fixed-top">
         <div class="container-fluid">
             <div class="row nav-row">
@@ -60,15 +33,8 @@
                         <button class="btn btn-primary" type="submit">Search</button>
                     </form>
                 </div>
-
                 <div class="col col-2 col-md-2 col-sm-2 text-end btn-group">
-                    <!-- <div class="mode-switch">
-                        <button class="btn btn-light mode-toggle">
-                            <i class="fa-solid fa-mountain-sun fa-lg"></i>
-                        </button>
-                    </div> -->
-
-                    <!-- <button type="button" class="btn-light btn-log-in" data-bs-toggle="modal"
+                    <button type="button" class="btn-light btn-log-in" data-bs-toggle="modal"
                         data-bs-target="#contactUsModal" data-bs-whatever="">
                         <i class="fa-solid fa-envelope fa-lg fa-bounce"></i>
                     </button>
@@ -80,7 +46,7 @@
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"><i class="fa-solid fa-bars fa-flip fa-lg"></i></span>
-                    </button> -->
+                    </button> 
                 </div>
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
@@ -94,7 +60,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="bootstrap.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="email.html">Contact Us</a>
@@ -221,7 +187,64 @@
           </div>
         </div>
       </div>
-
+      <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Send us a message
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Your email address:</label>
+                  <input type="text" class="form-control" id="recipient-name" disabled placeholder="mytravelsite@gmail.com"/>
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Sign-in" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="username" class="col-form-label">Your username</label>
+                  <input type="text" class="form-control" id="username" />
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="col-form-label">Password</label>
+                  <input type="password" class="form-control" name="pwd" id="pwd" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                Sign in
+              </button>
+              <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

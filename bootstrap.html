@@ -1,219 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="bootstrap.css">
-    <script src="https://kit.fontawesome.com/f22945cfc4.js" crossorigin="anonymous"></script>
-    
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="bootstrap.css" />
+  <script src="https://kit.fontawesome.com/f22945cfc4.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <nav class="navbar bg-top fixed-top">
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <div class="row nav-row">
-        <div class="col col-2 col-md-2 col-sm-2 icon-group"><a class="navbar-brand" href="#"><i class="fa-regular fa-compass fa-spin fa-2xl"></i></a></div>
-        <div class="col col-8 col-md-8 col-sm-8 search_bar">
+        <div class="col col-2 col-md-2 col-sm-2 icon-group">
+          <a class="navbar-brand" href="#"><i class="fa-regular fa-compass fa-spin fa-xl"></i></a>
+
+          <div class="home-section btn-group dropdown">
+            <button type="button" class="more-travel btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More travel
+            </button>
+            <ul class="dropdown-menu">
+              <li class="list-group-item active" aria-current="true">An active item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+              <li class="list-group-item">And a fifth one</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col col-8 col-md-6 col-sm-8 search_bar">
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-primary" type="submit">Search</button>
           </form>
         </div>
-        
+
         <div class="col col-2 col-md-2 col-sm-2 text-end btn-group">
           <div class="mode-switch">
-            <button class="btn btn-dark mode-toggle"><i class="fa-solid fa-mountain-sun fa-lg"></i></button>
-        </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <button class="btn btn-light mode-toggle">
+              <i class="fa-solid fa-mountain-sun fa-lg"></i>
+            </button>
+          </div>
+
+          <button type="button" class="btn-light btn-log-in" data-bs-toggle="modal" data-bs-target="#contactUsModal"
+            data-bs-whatever="">
+            <a href="email.html"><i class="fa-solid fa-envelope fa-lg fa-bounce"></i></a>
+          </button>
+          <button type="button" class="btn-light btn-sign-in" data-bs-toggle="modal" data-bs-target="#Sign-in"
+            data-bs-whatever="">
+            <i class="fa-solid fa-user fa-lg"></i>
+          </button>
+          <button class="navbar-toggler btn-light btn-sign-in" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa-solid fa-bars fa-flip fa-lg"></i></span>
           </button>
         </div>
-      
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Navigation
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="email.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   </nav>
-  
-      <div class="container-fluid body-container gx-3">
-        <div class="row carousel-row">
-          <div class="col-2 col-md-2 col-sm-2">
-            <!-- <ul class="list-group">
-                <a href="">
-                  <li class="list-group-item">An item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">A second item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">A third item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">A fourth item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">And a fifth one</li>
-                </a>
-              </ul> -->
-          </div>
-          <div class="col-8 col-md-8 col-sm-12">
-            <div id="carouselSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                  <img src="https://lh3.googleusercontent.com/p/AF1QipMazMQ8RXr-MdC8Y7RS2s1vG4cd-rQPxed4yLLb=s1360-w1360-h1020" class="carousel-img d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img src="https://lh3.googleusercontent.com/p/AF1QipPK9eMcDT8gQkY6hW17iQtXc872SPnhwpygMWv4=s1360-w1360-h1020" class="carousel-img d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                  <img src="https://lh3.googleusercontent.com/p/AF1QipN0-mJ4M1ftzod1vtrdwMyE2fmmqxGdPxnvQMH4=s1360-w1360-h1020" class="carousel-img d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+
+  <div class="container-fluid body-container gx-3">
+    <div class="row carousel-row">
+      <div class="col-2 col-md-2 col-sm-2">
+
+      </div>
+      <div class="col-8 col-md-12 col-sm-12">
+        <div id="carouselSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="https://images.pexels.com/photos/255419/pexels-photo-255419.jpeg?cs=srgb&dl=pexels-pixabay-255419.jpg&fm=jpg"
+                class="carousel-img d-block w-100" alt="..." />
             </div>
-            
-          </div>
-          <div class="col-2 col-md-2 col-sm-2">
-            <!-- <ul class="list-group">
-                <a href="">
-                  <li class="list-group-item">An item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">A second item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">A third item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">A fourth item</li>
-                </a>
-                <a href="">
-                  <li class="list-group-item">And a fifth one</li>
-                </a>
-              </ul> -->
-          </div>
-        </div> 
-        <div class="row gx-4 card-row">
-          <div class="col-2 col-md-2 col-sm-2"></div>
-          <div class="col_content col-8 col-md-8 col-sm-12 ">
-            <div class="row row_content px-2">
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2021/09/1140-joshua-tree-hero.imgcache.rev.web.2088.1200.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Joshua Tree Park</h5>
-                  <p class="card-text">Joshua Tree National Park is a stunning national park located in southeastern California, United States. It's known for its unique desert landscapes, rock formations, and, of course, its iconic Joshua trees (Yucca brevifolia).</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://lh3.googleusercontent.com/p/AF1QipO0D55rBXb8BP0z6M2usrZR8lV2JanLkHrqQUMm=s1360-w1360-h1020" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Grand Canyon</h5>
-                  <p class="card-text">The Grand Canyon is one of the most iconic natural wonders in the world. It's a massive, steep-sided canyon carved by the Colorado River. The canyon is known for its stunning and colorful landscape, with layered bands of red rock revealing millions of years of geological history. Visitors can explore the rim for breathtaking panoramic views or hike down into the canyon for a more immersive experience.</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1563449509.jpg?auto=format&w=1440&h=810&fit=crop&q=75" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Santorini</h5>
-                  <p class="card-text">Santorini is a picturesque island in the Aegean Sea known for its stunning sunsets, white-washed buildings, and crystal-clear waters. The island features beautiful cliffside villages like Oia and Fira, where visitors can explore narrow cobblestone streets, enjoy delicious Greek cuisine, and relax on volcanic beaches. Santorini is famous for its unique architecture and romantic atmosphere.</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://lh3.googleusercontent.com/p/AF1QipNmDUNFqDhCnLH2b2LJ5L7szKCIS0xgrxVVWDkU=s1360-w1360-h1020" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Balboa Park</h5>
-                  <p class="card-text">Balboa Park is a cultural and recreational oasis in the heart of San Diego. It's home to numerous museums, gardens, theaters, and the world-renowned San Diego Zoo. The park's architecture is influenced by Spanish colonial style, and it offers a variety of activities, including art exhibitions, botanical gardens, and live performances.</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>                     
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://lh3.googleusercontent.com/p/AF1QipPODBeubQ2uFS3n4a8KceQ7XRdrRnY_xzTpa7u4=s1360-w1360-h1020" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Lake Tahoe</h5>
-                  <p class="card-text">Lake Tahoe is a stunning alpine lake surrounded by the Sierra Nevada Mountains. Emerald Bay is a particularly scenic area on the lake's western shore, known for its crystal-clear waters and the historic Vikingsholm Castle. It's a year-round destination for outdoor activities, including skiing in winter and water sports in summer.</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://lh3.googleusercontent.com/p/AF1QipNiVUQD9sw5gsmCFPtZP-cXYBXFZaSDaK_fWNZ5=s1360-w1360-h1020" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Central Park</h5>
-                  <p class="card-text">Central Park is one of the most iconic and beloved urban parks in the world. It spans approximately 843 acres (341 hectares) and offers a tranquil escape from the bustling city that surrounds it. Designed by Frederick Law Olmsted and Calvert Vaux, the park features a harmonious blend of natural landscapes, recreational facilities, and cultural attractions.</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://lp-cms-production.imgix.net/2019-06/28206231.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Big Sur</h5>
-                  <p class="card-text">Big Sur is a rugged and stunning stretch of California's coastline along Highway 1. It's famous for its dramatic cliffs, redwood forests, and breathtaking ocean views. Visitors can explore state parks, hike in the wilderness, and enjoy some of California's most scenic drives. McWay Falls, Bixby Creek Bridge, and Pfeiffer Beach are popular highlights in the area.</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>
-              <div class="col-3 col-md-6 col-sm-12 card" >
-                <img src="https://lh3.googleusercontent.com/p/AF1QipNktHTYeBxduhkM20LEhIZn6N3Eqikso4I7iSj1=s1360-w1360-h1020" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Yellowstone National Park</h5>
-                  <p class="card-text">Yellowstone is the first and oldest national park in the world, known for its geothermal wonders, wildlife, and pristine wilderness. The park features iconic attractions such as Old Faithful, Grand Prismatic Spring, and Yellowstone Lake. Visitors can observe grizzly bears, wolves, bison, and a variety of other animals in their natural habitat. The park offers hiking, camping, and an opportunity to explore the wonders of the Yellowstone Caldera.</p>
-                  <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span> <i class="fa-solid fa-plane fa-beat"></i></a>
-                </div>
-              </div>  
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="https://photographylife.com/wp-content/uploads/2020/03/Ultra-Wide-Angle-Panoramas-1.jpg"
+                class="carousel-img d-block w-100" alt="..." />
             </div>
-            
-            
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="https://photographylife.com/wp-content/uploads/2020/03/Ultra-Wide-Angle-Panoramas-8.jpg"
+                class="carousel-img d-block w-100" alt="..." />
+            </div>
           </div>
-          <div class="col-2 col-md-2 col-sm-2">
-            
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-2 col-md-2 col-sm-2">
+
+      </div>
+    </div>
+    <div class="row gx-4 card-row">
+      <div class="col_content col-md-12 col-sm-12">
+        <div class="row row_content">
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img
+              src="https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2021/09/1140-joshua-tree-hero.imgcache.rev.web.2088.1200.jpg"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Joshua Tree Park</h5>
+              <p class="card-text">
+                Joshua Tree National Park is a stunning national park located
+                in southeastern California, United States. It's known for its
+                unique desert landscapes, rock formations, and, of course, its
+                iconic Joshua trees (Yucca brevifolia).
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipO0D55rBXb8BP0z6M2usrZR8lV2JanLkHrqQUMm=s1360-w1360-h1020"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Grand Canyon</h5>
+              <p class="card-text">
+                The Grand Canyon is one of the most iconic natural wonders in
+                the world. It's a massive, steep-sided canyon carved by the
+                Colorado River. The canyon is known for its stunning and
+                colorful landscape, with layered bands of red rock revealing
+                millions of years of geological history. Visitors can explore
+                the rim for breathtaking panoramic views or hike down into the
+                canyon for a more immersive experience.
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img
+              src="https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1563449509.jpg?auto=format&w=1440&h=810&fit=crop&q=75"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Santorini</h5>
+              <p class="card-text">
+                Santorini is a picturesque island in the Aegean Sea known for
+                its stunning sunsets, white-washed buildings, and
+                crystal-clear waters. The island features beautiful cliffside
+                villages like Oia and Fira, where visitors can explore narrow
+                cobblestone streets, enjoy delicious Greek cuisine, and relax
+                on volcanic beaches. Santorini is famous for its unique
+                architecture and romantic atmosphere.
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipNmDUNFqDhCnLH2b2LJ5L7szKCIS0xgrxVVWDkU=s1360-w1360-h1020"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Balboa Park</h5>
+              <p class="card-text">
+                Balboa Park is a cultural and recreational oasis in the heart
+                of San Diego. It's home to numerous museums, gardens,
+                theaters, and the world-renowned San Diego Zoo. The park's
+                architecture is influenced by Spanish colonial style, and it
+                offers a variety of activities, including art exhibitions,
+                botanical gardens, and live performances.
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipPODBeubQ2uFS3n4a8KceQ7XRdrRnY_xzTpa7u4=s1360-w1360-h1020"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Lake Tahoe</h5>
+              <p class="card-text">
+                Lake Tahoe is a stunning alpine lake surrounded by the Sierra
+                Nevada Mountains. Emerald Bay is a particularly scenic area on
+                the lake's western shore, known for its crystal-clear waters
+                and the historic Vikingsholm Castle. It's a year-round
+                destination for outdoor activities, including skiing in winter
+                and water sports in summer.
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipNiVUQD9sw5gsmCFPtZP-cXYBXFZaSDaK_fWNZ5=s1360-w1360-h1020"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Central Park</h5>
+              <p class="card-text">
+                Central Park is one of the most iconic and beloved urban parks
+                in the world. It spans approximately 843 acres (341 hectares)
+                and offers a tranquil escape from the bustling city that
+                surrounds it. Designed by Frederick Law Olmsted and Calvert
+                Vaux, the park features a harmonious blend of natural
+                landscapes, recreational facilities, and cultural attractions.
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img src="https://lp-cms-production.imgix.net/2019-06/28206231.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Big Sur</h5>
+              <p class="card-text">
+                Big Sur is a rugged and stunning stretch of California's
+                coastline along Highway 1. It's famous for its dramatic
+                cliffs, redwood forests, and breathtaking ocean views.
+                Visitors can explore state parks, hike in the wilderness, and
+                enjoy some of California's most scenic drives. McWay Falls,
+                Bixby Creek Bridge, and Pfeiffer Beach are popular highlights
+                in the area.
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 card">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipNktHTYeBxduhkM20LEhIZn6N3Eqikso4I7iSj1=s1360-w1360-h1020"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Yellowstone National Park</h5>
+              <p class="card-text">
+                Yellowstone is the first and oldest national park in the
+                world, known for its geothermal wonders, wildlife, and
+                pristine wilderness. The park features iconic attractions such
+                as Old Faithful, Grand Prismatic Spring, and Yellowstone Lake.
+                Visitors can observe grizzly bears, wolves, bison, and a
+                variety of other animals in their natural habitat. The park
+                offers hiking, camping, and an opportunity to explore the
+                wonders of the Yellowstone Caldera.
+              </p>
+              <a href="#" class="btn btn-primary card-btn"><span class="btn-text">Travel</span>
+                <i class="fa-solid fa-plane fa-beat"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    <footer>
-      </footer>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    </div>
+  </div>
+  <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Send us a message
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Your email address:</label>
+              <input type="text" class="form-control" id="recipient-name" />
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="Sign-in" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="username" class="col-form-label">Your username</label>
+              <input type="text" class="form-control" id="username" />
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="col-form-label">Password</label>
+              <input type="password" class="form-control" name="pwd" id="pwd" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+            Sign in
+          </button>
+          <button type="button" class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
